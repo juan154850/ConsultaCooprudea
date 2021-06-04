@@ -44,7 +44,7 @@
 }
 
 .logoUdeA {
-  margin: 50px;
+  /*margin: 50px;*/
   box-shadow: -3px 3px 6px rgba(44, 148, 49, 0.377);
   transition: linear 0.2s;
 }
