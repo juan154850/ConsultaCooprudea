@@ -54,14 +54,14 @@ function loadDoc()
       let nombre="";
       let cedula="";
       let tel=""; 
-      let nickName = "Desconocido";
+      let nickName = "";
       //let inicialGrupo = 1; 
       
       for ( let i in textoLeido)
       {
         if(textoLeido[i] == '|'){
           contador++; 
-          if(contador==3){
+          if(contador==4){
             contador=0;       
             /*console.log(nombre);
             console.log(cedula);
@@ -72,6 +72,7 @@ function loadDoc()
             nombre="";
             cedula="";
             tel=""; 
+            nickName = "";
             //contadorGrupos++;
             /*if(contadorGrupos==4 ){
               inicialGrupo++;   
@@ -90,6 +91,9 @@ function loadDoc()
           }
           else if(contador==2){
             tel += textoLeido[i];
+          }
+          else if(contador==3){
+            nickName += textoLeido[i];
           }
         }
       }
